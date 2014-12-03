@@ -924,6 +924,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9uT-09-7lq">
+                                <rect key="frame" x="96" y="8" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="ard-Zg-1n4"/>
+                                    <constraint firstAttribute="width" constant="72" id="l54-hX-3EW"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="2HJ-Pg-CAU"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="wjP-Lt-WWF" secondAttribute="trailing" constant="20" id="0v5-41-JCK"/>
@@ -956,15 +964,19 @@
                             <constraint firstItem="oGW-15-Mv8" firstAttribute="leading" secondItem="Ec5-xn-2jN" secondAttribute="trailing" constant="12" id="oaV-Bk-PZa"/>
                             <constraint firstItem="l1n-a5-FAe" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="oc1-wF-RYs"/>
                             <constraint firstItem="rhY-p6-Pfi" firstAttribute="leading" secondItem="oor-fY-CwK" secondAttribute="trailing" constant="12" id="p2V-Kh-aFd"/>
+                            <constraint firstItem="wjP-Lt-WWF" firstAttribute="leading" secondItem="9uT-09-7lq" secondAttribute="trailing" constant="8" id="qhC-Iv-Aa5"/>
                             <constraint firstItem="z0T-FI-CpF" firstAttribute="leading" secondItem="sF7-EJ-etm" secondAttribute="trailing" constant="12" id="rIe-fw-sCa"/>
+                            <constraint firstItem="9uT-09-7lq" firstAttribute="top" secondItem="lGi-ix-6AD" secondAttribute="bottom" constant="13" id="tlf-0X-hif"/>
                             <constraint firstItem="lGi-ix-6AD" firstAttribute="leading" secondItem="oGW-15-Mv8" secondAttribute="trailing" constant="12" id="tyg-xy-csp"/>
                             <constraint firstItem="l1n-a5-FAe" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="uar-Yz-SLJ"/>
+                            <constraint firstItem="9uT-09-7lq" firstAttribute="leading" secondItem="oUa-uM-hjz" secondAttribute="trailing" constant="6" id="yCb-po-lNy"/>
                             <constraint firstItem="ePI-tv-kXb" firstAttribute="top" secondItem="TVa-KO-fRf" secondAttribute="bottom" constant="12" id="zRc-8r-f74"/>
                             <constraint firstItem="Ffz-8g-8Yx" firstAttribute="leading" secondItem="TVa-KO-fRf" secondAttribute="trailing" constant="12" id="zaJ-IH-i2B"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="numberField" destination="l1n-a5-FAe" id="QuT-tu-94h"/>
+                        <outlet property="qrImageView" destination="9uT-09-7lq" id="Owj-nz-Stu"/>
                         <outlet property="tableView" destination="ShY-Ud-kZF" id="KG6-tY-Lbv"/>
                     </connections>
                 </viewController>

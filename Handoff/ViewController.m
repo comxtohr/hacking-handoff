@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "PhoneCallMonitor.h"
+#import <QREncoder/QREncoderOSX.h>
 
 @interface ViewController ()
 
@@ -36,6 +37,20 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [_tableView setDoubleAction:@selector(selectNumber:)];
+    
+    NSString *address;
+    NSArray *addresses = [[NSHost currentHost] addresses];
+    for (NSString *anAddress in addresses) {
+        if (![anAddress hasPrefix:@"127"] && [[anAddress componentsSeparatedByString:@"."] count] == 4) {
+            address = anAddress;
+            break;
+        }
+    }
+    NSImage *image = [QREncoderOSX encode:address scale:2];
+    _qrImageView.wantsLayer = YES;
+    [_qrImageView setImage:image];
+    [_qrImageView setImageScaling:NSScaleToFit];
+    [_qrImageView layer].magnificationFilter = kCAFilterNearest;
 }
 
 - (void)setRepresentedObject:(id)representedObject {

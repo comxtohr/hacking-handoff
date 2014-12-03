@@ -12,6 +12,7 @@
 
 @property (weak) IBOutlet NSTextField *numberField;
 @property (weak) IBOutlet NSTableView *tableView;
+@property (weak) IBOutlet NSImageView *qrImageView;
 
 - (IBAction)numberBtnClicked:(NSButton *)sender;
 - (IBAction)clearBtnClicked:(NSButton *)sender;

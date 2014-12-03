@@ -25,6 +25,7 @@
 		8F7C32F21A2EA21A003B7FF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7C32F11A2EA21A003B7FF8 /* Images.xcassets */; };
 		8F7C32F51A2EA21A003B7FF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7C32F31A2EA21A003B7FF8 /* Main.storyboard */; };
 		8F7C33011A2EA21A003B7FF8 /* HandoffTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7C33001A2EA21A003B7FF8 /* HandoffTests.m */; };
+		8FD42AF01A2F4AE800A7D147 /* libQREncoderOSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD42AED1A2F4ADC00A7D147 /* libQREncoderOSX.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8F7C32E31A2EA21A003B7FF8;
 			remoteInfo = Handoff;
+		};
+		8FD42AE81A2F4ADC00A7D147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = QREncoder;
+		};
+		8FD42AEA1A2F4ADC00A7D147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB7DA3AE10A4F5D90071984A;
+			remoteInfo = QREncoderTest;
+		};
+		8FD42AEC1A2F4ADC00A7D147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8F8E88AF1A2F2F110032ECA9;
+			remoteInfo = QREncoderOSX;
+		};
+		8FD42AEE1A2F4ADC00A7D147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8F8E88B91A2F2F110032ECA9;
+			remoteInfo = QREncoderOSXTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -67,6 +96,7 @@
 		8F7C32FA1A2EA21A003B7FF8 /* HandoffTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandoffTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7C32FF1A2EA21A003B7FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F7C33001A2EA21A003B7FF8 /* HandoffTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandoffTests.m; sourceTree = "<group>"; };
+		8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QREncoder.xcodeproj; path = ObjQREncoder/src/QREncoder.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD42AF01A2F4AE800A7D147 /* libQREncoderOSX.a in Frameworks */,
 				8F75337E1A2EE5EC000A8BB1 /* CoreData.framework in Frameworks */,
 				8F75337C1A2EE5E4000A8BB1 /* AppKit.framework in Frameworks */,
 				8F75337A1A2EE5DF000A8BB1 /* Foundation.framework in Frameworks */,
@@ -113,6 +144,7 @@
 		8F75337F1A2EE5F2000A8BB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */,
 				8F75337D1A2EE5EC000A8BB1 /* CoreData.framework */,
 				8F75337B1A2EE5E4000A8BB1 /* AppKit.framework */,
 				8F7533791A2EE5DF000A8BB1 /* Foundation.framework */,
@@ -184,6 +216,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8FD42AE21A2F4ADC00A7D147 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FD42AE91A2F4ADC00A7D147 /* libQREncoder.a */,
+				8FD42AEB1A2F4ADC00A7D147 /* QREncoderTest.octest */,
+				8FD42AED1A2F4ADC00A7D147 /* libQREncoderOSX.a */,
+				8FD42AEF1A2F4ADC00A7D147 /* QREncoderOSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,6 +294,12 @@
 			mainGroup = 8F7C32DB1A2EA21A003B7FF8;
 			productRefGroup = 8F7C32E51A2EA21A003B7FF8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8FD42AE21A2F4ADC00A7D147 /* Products */;
+					ProjectRef = 8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8F7C32E31A2EA21A003B7FF8 /* Handoff */,
@@ -258,6 +307,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8FD42AE91A2F4ADC00A7D147 /* libQREncoder.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQREncoder.a;
+			remoteRef = 8FD42AE81A2F4ADC00A7D147 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8FD42AEB1A2F4ADC00A7D147 /* QREncoderTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = QREncoderTest.octest;
+			remoteRef = 8FD42AEA1A2F4ADC00A7D147 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8FD42AED1A2F4ADC00A7D147 /* libQREncoderOSX.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQREncoderOSX.a;
+			remoteRef = 8FD42AEC1A2F4ADC00A7D147 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8FD42AEF1A2F4ADC00A7D147 /* QREncoderOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = QREncoderOSXTests.xctest;
+			remoteRef = 8FD42AEE1A2F4ADC00A7D147 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8F7C32E21A2EA21A003B7FF8 /* Resources */ = {
@@ -407,6 +487,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					./ObjQREncoder/src/Classes/,
+				);
 				INFOPLIST_FILE = Handoff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
@@ -420,6 +505,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					./ObjQREncoder/src/Classes/,
+				);
 				INFOPLIST_FILE = Handoff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
