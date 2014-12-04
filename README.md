@@ -6,4 +6,4 @@ hacking Handoff on Android Devices
 
 - send/receive SMS on your Mac
 - phone call notification on your Mac
-- Don't require WiFi/USB
+- Don't require USB
