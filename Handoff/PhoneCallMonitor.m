@@ -78,7 +78,7 @@ NSLog(@"postRegistrationInit");
 /* UNDOCUMETED DELEGATE CALL */
 -(void)handsFree:(IOBluetoothDevice*)device incomingCallFrom:(NSString*)number {
     if (!Some1Calling) {
-        Some1Calling = TRUE;
+//        Some1Calling = TRUE;
         NSLog(@"Call %@", number);
 //        registerDevice = (IOBluetoothHandsFreeDevice*)device;
         NSAlert *alert = [NSAlert alertWithMessageText:[NSString stringWithFormat:@"Getting Call From : %@",number]
@@ -102,17 +102,13 @@ NSLog(@"postRegistrationInit");
 }
 -(void)dialNumber:(NSString *)number
 {
-    if (!Some1Calling && registerDevice) {
-        Some1Calling = TRUE;
+    if (registerDevice) {
         [registerDevice dialNumber:number];
     }
 }
 -(void)endCalling
 {
-    if (Some1Calling) {
-        Some1Calling = FALSE;
-        [registerDevice endCall];
-    }
+    [registerDevice endCall];
 }
 //-(void)PickUpCall{
 //    

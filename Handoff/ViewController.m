@@ -8,12 +8,13 @@
 
 #import "ViewController.h"
 #import "PhoneCallMonitor.h"
+#import "VCardParser.h"
 #import <QREncoder/QREncoderOSX.h>
 
 @interface ViewController ()
 
 @property (strong, nonatomic) NSString *dialNumber;
-@property (strong, nonatomic) NSMutableArray *contacts;
+@property (strong, nonatomic) NSArray *contacts;
 @property (assign, nonatomic) PhoneCallMonitor *monitor;
 
 @end
@@ -25,13 +26,11 @@
     
     // Do any additional setup after loading the view.
     _dialNumber = @"";
-    _contacts = [@[] mutableCopy];
 
     _monitor = [PhoneCallMonitor sharedMonitor];
     
-    NSDictionary *dict = @{@"Name": @"Yifei",
-                           @"Number": @"18601622461"};
-    [_contacts addObject:dict];
+    NSString *filePath = @"/Users/Yifei/Downloads/c.vcf";
+    _contacts = [VCardParser parseWithContentOfFile:filePath];
     
     [_numberField setStringValue:_dialNumber];
     _tableView.delegate = self;

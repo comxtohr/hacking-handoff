@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F6D3A4E1A301C3600F8278C /* VCardParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D3A4D1A301C3600F8278C /* VCardParser.m */; };
+		8F6D3A541A301D2600F8278C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6D3A531A301D2600F8278C /* AddressBook.framework */; };
 		8F75336A1A2EE446000A8BB1 /* BLBluetoothOBEXSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7533631A2EE446000A8BB1 /* BLBluetoothOBEXSession.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8F75336B1A2EE446000A8BB1 /* BLMASSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7533651A2EE446000A8BB1 /* BLMASSession.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8F75336C1A2EE446000A8BB1 /* BLMNSServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7533671A2EE446000A8BB1 /* BLMNSServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -67,6 +69,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F6D3A4C1A301C3600F8278C /* VCardParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCardParser.h; sourceTree = "<group>"; };
+		8F6D3A4D1A301C3600F8278C /* VCardParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCardParser.m; sourceTree = "<group>"; };
+		8F6D3A531A301D2600F8278C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		8F7533621A2EE446000A8BB1 /* BLBluetoothOBEXSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBluetoothOBEXSession.h; sourceTree = "<group>"; };
 		8F7533631A2EE446000A8BB1 /* BLBluetoothOBEXSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBluetoothOBEXSession.m; sourceTree = "<group>"; };
 		8F7533641A2EE446000A8BB1 /* BLMASSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMASSession.h; sourceTree = "<group>"; };
@@ -104,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F6D3A541A301D2600F8278C /* AddressBook.framework in Frameworks */,
 				8FD42AF01A2F4AE800A7D147 /* libQREncoderOSX.a in Frameworks */,
 				8F75337E1A2EE5EC000A8BB1 /* CoreData.framework in Frameworks */,
 				8F75337C1A2EE5E4000A8BB1 /* AppKit.framework in Frameworks */,
@@ -137,6 +143,8 @@
 				8F7533671A2EE446000A8BB1 /* BLMNSServer.m */,
 				8F7533681A2EE446000A8BB1 /* BLMNSService.h */,
 				8F7533691A2EE446000A8BB1 /* BLMNSService.m */,
+				8F6D3A4C1A301C3600F8278C /* VCardParser.h */,
+				8F6D3A4D1A301C3600F8278C /* VCardParser.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -144,6 +152,7 @@
 		8F75337F1A2EE5F2000A8BB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F6D3A531A301D2600F8278C /* AddressBook.framework */,
 				8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */,
 				8F75337D1A2EE5EC000A8BB1 /* CoreData.framework */,
 				8F75337B1A2EE5E4000A8BB1 /* AppKit.framework */,
@@ -364,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F6D3A4E1A301C3600F8278C /* VCardParser.m in Sources */,
 				8F7C32F01A2EA21A003B7FF8 /* ViewController.m in Sources */,
 				8F75336A1A2EE446000A8BB1 /* BLBluetoothOBEXSession.m in Sources */,
 				8F7C32ED1A2EA21A003B7FF8 /* main.m in Sources */,
