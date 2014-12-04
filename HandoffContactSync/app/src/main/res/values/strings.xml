@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Handoff Contact Sync</string>
+    <string name="title_activity_main">Handoff Contact Sync</string>
+    <string name="btn_scan">Scan</string>
+    <string name="btn_sync">Start Sync</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
