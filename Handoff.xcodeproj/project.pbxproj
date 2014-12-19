@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F6D3A4E1A301C3600F8278C /* VCardParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D3A4D1A301C3600F8278C /* VCardParser.m */; };
+		8F6D3A541A301D2600F8278C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6D3A531A301D2600F8278C /* AddressBook.framework */; };
+		8F75336A1A2EE446000A8BB1 /* BLBluetoothOBEXSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7533631A2EE446000A8BB1 /* BLBluetoothOBEXSession.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8F75336B1A2EE446000A8BB1 /* BLMASSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7533651A2EE446000A8BB1 /* BLMASSession.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8F75336C1A2EE446000A8BB1 /* BLMNSServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7533671A2EE446000A8BB1 /* BLMNSServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8F75336D1A2EE446000A8BB1 /* BLMNSService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7533691A2EE446000A8BB1 /* BLMNSService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8F7533711A2EE458000A8BB1 /* HandsFreeDeviceSDPRecord.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F75336E1A2EE458000A8BB1 /* HandsFreeDeviceSDPRecord.plist */; };
+		8F7533721A2EE458000A8BB1 /* PhoneCallMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7533701A2EE458000A8BB1 /* PhoneCallMonitor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8F7533751A2EE5C8000A8BB1 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7533731A2EE5C8000A8BB1 /* IOBluetooth.framework */; };
+		8F7533761A2EE5C8000A8BB1 /* IOBluetoothUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7533741A2EE5C8000A8BB1 /* IOBluetoothUI.framework */; };
+		8F7533781A2EE5D1000A8BB1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7533771A2EE5D1000A8BB1 /* Cocoa.framework */; };
+		8F75337A1A2EE5DF000A8BB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7533791A2EE5DF000A8BB1 /* Foundation.framework */; };
+		8F75337C1A2EE5E4000A8BB1 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F75337B1A2EE5E4000A8BB1 /* AppKit.framework */; };
+		8F75337E1A2EE5EC000A8BB1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F75337D1A2EE5EC000A8BB1 /* CoreData.framework */; };
+		8F7C32EB1A2EA21A003B7FF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7C32EA1A2EA21A003B7FF8 /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8F7C32ED1A2EA21A003B7FF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7C32EC1A2EA21A003B7FF8 /* main.m */; };
+		8F7C32F01A2EA21A003B7FF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7C32EF1A2EA21A003B7FF8 /* ViewController.m */; };
+		8F7C32F21A2EA21A003B7FF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7C32F11A2EA21A003B7FF8 /* Images.xcassets */; };
+		8F7C32F51A2EA21A003B7FF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7C32F31A2EA21A003B7FF8 /* Main.storyboard */; };
+		8F7C33011A2EA21A003B7FF8 /* HandoffTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7C33001A2EA21A003B7FF8 /* HandoffTests.m */; };
+		8FD42AF01A2F4AE800A7D147 /* libQREncoderOSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD42AED1A2F4ADC00A7D147 /* libQREncoderOSX.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F7C32FB1A2EA21A003B7FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F7C32DC1A2EA21A003B7FF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F7C32E31A2EA21A003B7FF8;
+			remoteInfo = Handoff;
+		};
+		8FD42AE81A2F4ADC00A7D147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = QREncoder;
+		};
+		8FD42AEA1A2F4ADC00A7D147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB7DA3AE10A4F5D90071984A;
+			remoteInfo = QREncoderTest;
+		};
+		8FD42AEC1A2F4ADC00A7D147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8F8E88AF1A2F2F110032ECA9;
+			remoteInfo = QREncoderOSX;
+		};
+		8FD42AEE1A2F4ADC00A7D147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8F8E88B91A2F2F110032ECA9;
+			remoteInfo = QREncoderOSXTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F6D3A4C1A301C3600F8278C /* VCardParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCardParser.h; sourceTree = "<group>"; };
+		8F6D3A4D1A301C3600F8278C /* VCardParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCardParser.m; sourceTree = "<group>"; };
+		8F6D3A531A301D2600F8278C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		8F7533621A2EE446000A8BB1 /* BLBluetoothOBEXSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBluetoothOBEXSession.h; sourceTree = "<group>"; };
+		8F7533631A2EE446000A8BB1 /* BLBluetoothOBEXSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBluetoothOBEXSession.m; sourceTree = "<group>"; };
+		8F7533641A2EE446000A8BB1 /* BLMASSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMASSession.h; sourceTree = "<group>"; };
+		8F7533651A2EE446000A8BB1 /* BLMASSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMASSession.m; sourceTree = "<group>"; };
+		8F7533661A2EE446000A8BB1 /* BLMNSServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMNSServer.h; sourceTree = "<group>"; };
+		8F7533671A2EE446000A8BB1 /* BLMNSServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMNSServer.m; sourceTree = "<group>"; };
+		8F7533681A2EE446000A8BB1 /* BLMNSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMNSService.h; sourceTree = "<group>"; };
+		8F7533691A2EE446000A8BB1 /* BLMNSService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMNSService.m; sourceTree = "<group>"; };
+		8F75336E1A2EE458000A8BB1 /* HandsFreeDeviceSDPRecord.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = HandsFreeDeviceSDPRecord.plist; path = Handoff/HandsFreeDeviceSDPRecord.plist; sourceTree = SOURCE_ROOT; };
+		8F75336F1A2EE458000A8BB1 /* PhoneCallMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhoneCallMonitor.h; path = Handoff/PhoneCallMonitor.h; sourceTree = SOURCE_ROOT; };
+		8F7533701A2EE458000A8BB1 /* PhoneCallMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhoneCallMonitor.m; path = Handoff/PhoneCallMonitor.m; sourceTree = SOURCE_ROOT; };
+		8F7533731A2EE5C8000A8BB1 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		8F7533741A2EE5C8000A8BB1 /* IOBluetoothUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetoothUI.framework; path = System/Library/Frameworks/IOBluetoothUI.framework; sourceTree = SDKROOT; };
+		8F7533771A2EE5D1000A8BB1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8F7533791A2EE5DF000A8BB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8F75337B1A2EE5E4000A8BB1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8F75337D1A2EE5EC000A8BB1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8F7C32E41A2EA21A003B7FF8 /* Handoff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Handoff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F7C32E81A2EA21A003B7FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F7C32E91A2EA21A003B7FF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F7C32EA1A2EA21A003B7FF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8F7C32EC1A2EA21A003B7FF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8F7C32EE1A2EA21A003B7FF8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8F7C32EF1A2EA21A003B7FF8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8F7C32F11A2EA21A003B7FF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8F7C32F41A2EA21A003B7FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F7C32FA1A2EA21A003B7FF8 /* HandoffTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandoffTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F7C32FF1A2EA21A003B7FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F7C33001A2EA21A003B7FF8 /* HandoffTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandoffTests.m; sourceTree = "<group>"; };
+		8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QREncoder.xcodeproj; path = ObjQREncoder/src/QREncoder.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F7C32E11A2EA21A003B7FF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6D3A541A301D2600F8278C /* AddressBook.framework in Frameworks */,
+				8FD42AF01A2F4AE800A7D147 /* libQREncoderOSX.a in Frameworks */,
+				8F75337E1A2EE5EC000A8BB1 /* CoreData.framework in Frameworks */,
+				8F75337C1A2EE5E4000A8BB1 /* AppKit.framework in Frameworks */,
+				8F75337A1A2EE5DF000A8BB1 /* Foundation.framework in Frameworks */,
+				8F7533781A2EE5D1000A8BB1 /* Cocoa.framework in Frameworks */,
+				8F7533751A2EE5C8000A8BB1 /* IOBluetooth.framework in Frameworks */,
+				8F7533761A2EE5C8000A8BB1 /* IOBluetoothUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7C32F71A2EA21A003B7FF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F7533611A2EE446000A8BB1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8F75336F1A2EE458000A8BB1 /* PhoneCallMonitor.h */,
+				8F7533701A2EE458000A8BB1 /* PhoneCallMonitor.m */,
+				8F7533621A2EE446000A8BB1 /* BLBluetoothOBEXSession.h */,
+				8F7533631A2EE446000A8BB1 /* BLBluetoothOBEXSession.m */,
+				8F7533641A2EE446000A8BB1 /* BLMASSession.h */,
+				8F7533651A2EE446000A8BB1 /* BLMASSession.m */,
+				8F7533661A2EE446000A8BB1 /* BLMNSServer.h */,
+				8F7533671A2EE446000A8BB1 /* BLMNSServer.m */,
+				8F7533681A2EE446000A8BB1 /* BLMNSService.h */,
+				8F7533691A2EE446000A8BB1 /* BLMNSService.m */,
+				8F6D3A4C1A301C3600F8278C /* VCardParser.h */,
+				8F6D3A4D1A301C3600F8278C /* VCardParser.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		8F75337F1A2EE5F2000A8BB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F6D3A531A301D2600F8278C /* AddressBook.framework */,
+				8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */,
+				8F75337D1A2EE5EC000A8BB1 /* CoreData.framework */,
+				8F75337B1A2EE5E4000A8BB1 /* AppKit.framework */,
+				8F7533791A2EE5DF000A8BB1 /* Foundation.framework */,
+				8F7533771A2EE5D1000A8BB1 /* Cocoa.framework */,
+				8F7533731A2EE5C8000A8BB1 /* IOBluetooth.framework */,
+				8F7533741A2EE5C8000A8BB1 /* IOBluetoothUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F7C32DB1A2EA21A003B7FF8 = {
+			isa = PBXGroup;
+			children = (
+				8F7C32E61A2EA21A003B7FF8 /* Handoff */,
+				8F7C32FD1A2EA21A003B7FF8 /* HandoffTests */,
+				8F7C32E51A2EA21A003B7FF8 /* Products */,
+				8F75337F1A2EE5F2000A8BB1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8F7C32E51A2EA21A003B7FF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F7C32E41A2EA21A003B7FF8 /* Handoff.app */,
+				8F7C32FA1A2EA21A003B7FF8 /* HandoffTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F7C32E61A2EA21A003B7FF8 /* Handoff */ = {
+			isa = PBXGroup;
+			children = (
+				8F75336E1A2EE458000A8BB1 /* HandsFreeDeviceSDPRecord.plist */,
+				8F7533611A2EE446000A8BB1 /* src */,
+				8F7C32E91A2EA21A003B7FF8 /* AppDelegate.h */,
+				8F7C32EA1A2EA21A003B7FF8 /* AppDelegate.m */,
+				8F7C32EE1A2EA21A003B7FF8 /* ViewController.h */,
+				8F7C32EF1A2EA21A003B7FF8 /* ViewController.m */,
+				8F7C32F11A2EA21A003B7FF8 /* Images.xcassets */,
+				8F7C32F31A2EA21A003B7FF8 /* Main.storyboard */,
+				8F7C32E71A2EA21A003B7FF8 /* Supporting Files */,
+			);
+			path = Handoff;
+			sourceTree = "<group>";
+		};
+		8F7C32E71A2EA21A003B7FF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F7C32E81A2EA21A003B7FF8 /* Info.plist */,
+				8F7C32EC1A2EA21A003B7FF8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F7C32FD1A2EA21A003B7FF8 /* HandoffTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F7C33001A2EA21A003B7FF8 /* HandoffTests.m */,
+				8F7C32FE1A2EA21A003B7FF8 /* Supporting Files */,
+			);
+			path = HandoffTests;
+			sourceTree = "<group>";
+		};
+		8F7C32FE1A2EA21A003B7FF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F7C32FF1A2EA21A003B7FF8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FD42AE21A2F4ADC00A7D147 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FD42AE91A2F4ADC00A7D147 /* libQREncoder.a */,
+				8FD42AEB1A2F4ADC00A7D147 /* QREncoderTest.octest */,
+				8FD42AED1A2F4ADC00A7D147 /* libQREncoderOSX.a */,
+				8FD42AEF1A2F4ADC00A7D147 /* QREncoderOSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F7C32E31A2EA21A003B7FF8 /* Handoff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F7C33041A2EA21A003B7FF8 /* Build configuration list for PBXNativeTarget "Handoff" */;
+			buildPhases = (
+				8F7C32E01A2EA21A003B7FF8 /* Sources */,
+				8F7C32E11A2EA21A003B7FF8 /* Frameworks */,
+				8F7C32E21A2EA21A003B7FF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Handoff;
+			productName = Handoff;
+			productReference = 8F7C32E41A2EA21A003B7FF8 /* Handoff.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F7C32F91A2EA21A003B7FF8 /* HandoffTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F7C33071A2EA21A003B7FF8 /* Build configuration list for PBXNativeTarget "HandoffTests" */;
+			buildPhases = (
+				8F7C32F61A2EA21A003B7FF8 /* Sources */,
+				8F7C32F71A2EA21A003B7FF8 /* Frameworks */,
+				8F7C32F81A2EA21A003B7FF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F7C32FC1A2EA21A003B7FF8 /* PBXTargetDependency */,
+			);
+			name = HandoffTests;
+			productName = HandoffTests;
+			productReference = 8F7C32FA1A2EA21A003B7FF8 /* HandoffTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F7C32DC1A2EA21A003B7FF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Yifei Zhou";
+				TargetAttributes = {
+					8F7C32E31A2EA21A003B7FF8 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					8F7C32F91A2EA21A003B7FF8 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 8F7C32E31A2EA21A003B7FF8;
+					};
+				};
+			};
+			buildConfigurationList = 8F7C32DF1A2EA21A003B7FF8 /* Build configuration list for PBXProject "Handoff" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F7C32DB1A2EA21A003B7FF8;
+			productRefGroup = 8F7C32E51A2EA21A003B7FF8 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8FD42AE21A2F4ADC00A7D147 /* Products */;
+					ProjectRef = 8FD42AE11A2F4ADC00A7D147 /* QREncoder.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8F7C32E31A2EA21A003B7FF8 /* Handoff */,
+				8F7C32F91A2EA21A003B7FF8 /* HandoffTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8FD42AE91A2F4ADC00A7D147 /* libQREncoder.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQREncoder.a;
+			remoteRef = 8FD42AE81A2F4ADC00A7D147 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8FD42AEB1A2F4ADC00A7D147 /* QREncoderTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = QREncoderTest.octest;
+			remoteRef = 8FD42AEA1A2F4ADC00A7D147 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8FD42AED1A2F4ADC00A7D147 /* libQREncoderOSX.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQREncoderOSX.a;
+			remoteRef = 8FD42AEC1A2F4ADC00A7D147 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8FD42AEF1A2F4ADC00A7D147 /* QREncoderOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = QREncoderOSXTests.xctest;
+			remoteRef = 8FD42AEE1A2F4ADC00A7D147 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F7C32E21A2EA21A003B7FF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7C32F21A2EA21A003B7FF8 /* Images.xcassets in Resources */,
+				8F7533711A2EE458000A8BB1 /* HandsFreeDeviceSDPRecord.plist in Resources */,
+				8F7C32F51A2EA21A003B7FF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7C32F81A2EA21A003B7FF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F7C32E01A2EA21A003B7FF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6D3A4E1A301C3600F8278C /* VCardParser.m in Sources */,
+				8F7C32F01A2EA21A003B7FF8 /* ViewController.m in Sources */,
+				8F75336A1A2EE446000A8BB1 /* BLBluetoothOBEXSession.m in Sources */,
+				8F7C32ED1A2EA21A003B7FF8 /* main.m in Sources */,
+				8F7533721A2EE458000A8BB1 /* PhoneCallMonitor.m in Sources */,
+				8F7C32EB1A2EA21A003B7FF8 /* AppDelegate.m in Sources */,
+				8F75336B1A2EE446000A8BB1 /* BLMASSession.m in Sources */,
+				8F75336C1A2EE446000A8BB1 /* BLMNSServer.m in Sources */,
+				8F75336D1A2EE446000A8BB1 /* BLMNSService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7C32F61A2EA21A003B7FF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7C33011A2EA21A003B7FF8 /* HandoffTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F7C32FC1A2EA21A003B7FF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F7C32E31A2EA21A003B7FF8 /* Handoff */;
+			targetProxy = 8F7C32FB1A2EA21A003B7FF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F7C32F31A2EA21A003B7FF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F7C32F41A2EA21A003B7FF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F7C33021A2EA21A003B7FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8F7C33031A2EA21A003B7FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8F7C33051A2EA21A003B7FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					./ObjQREncoder/src/Classes/,
+				);
+				INFOPLIST_FILE = Handoff/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F7C33061A2EA21A003B7FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					./ObjQREncoder/src/Classes/,
+				);
+				INFOPLIST_FILE = Handoff/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8F7C33081A2EA21A003B7FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HandoffTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Handoff.app/Contents/MacOS/Handoff";
+			};
+			name = Debug;
+		};
+		8F7C33091A2EA21A003B7FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HandoffTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Handoff.app/Contents/MacOS/Handoff";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F7C32DF1A2EA21A003B7FF8 /* Build configuration list for PBXProject "Handoff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F7C33021A2EA21A003B7FF8 /* Debug */,
+				8F7C33031A2EA21A003B7FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F7C33041A2EA21A003B7FF8 /* Build configuration list for PBXNativeTarget "Handoff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F7C33051A2EA21A003B7FF8 /* Debug */,
+				8F7C33061A2EA21A003B7FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F7C33071A2EA21A003B7FF8 /* Build configuration list for PBXNativeTarget "HandoffTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F7C33081A2EA21A003B7FF8 /* Debug */,
+				8F7C33091A2EA21A003B7FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F7C32DC1A2EA21A003B7FF8 /* Project object */;
+}
