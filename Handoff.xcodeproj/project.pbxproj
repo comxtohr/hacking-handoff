@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F29CC901A4174ED00EBD7C3 /* UDPEcho.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F29CC8F1A4174ED00EBD7C3 /* UDPEcho.m */; };
 		8F6D3A4E1A301C3600F8278C /* VCardParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D3A4D1A301C3600F8278C /* VCardParser.m */; };
 		8F6D3A541A301D2600F8278C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6D3A531A301D2600F8278C /* AddressBook.framework */; };
 		8F75336A1A2EE446000A8BB1 /* BLBluetoothOBEXSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7533631A2EE446000A8BB1 /* BLBluetoothOBEXSession.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -69,6 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F29CC8E1A4174ED00EBD7C3 /* UDPEcho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPEcho.h; sourceTree = "<group>"; };
+		8F29CC8F1A4174ED00EBD7C3 /* UDPEcho.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDPEcho.m; sourceTree = "<group>"; };
 		8F6D3A4C1A301C3600F8278C /* VCardParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCardParser.h; sourceTree = "<group>"; };
 		8F6D3A4D1A301C3600F8278C /* VCardParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCardParser.m; sourceTree = "<group>"; };
 		8F6D3A531A301D2600F8278C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -192,6 +195,8 @@
 				8F7C32EA1A2EA21A003B7FF8 /* AppDelegate.m */,
 				8F7C32EE1A2EA21A003B7FF8 /* ViewController.h */,
 				8F7C32EF1A2EA21A003B7FF8 /* ViewController.m */,
+				8F29CC8E1A4174ED00EBD7C3 /* UDPEcho.h */,
+				8F29CC8F1A4174ED00EBD7C3 /* UDPEcho.m */,
 				8F7C32F11A2EA21A003B7FF8 /* Images.xcassets */,
 				8F7C32F31A2EA21A003B7FF8 /* Main.storyboard */,
 				8F7C32E71A2EA21A003B7FF8 /* Supporting Files */,
@@ -375,6 +380,7 @@
 			files = (
 				8F6D3A4E1A301C3600F8278C /* VCardParser.m in Sources */,
 				8F7C32F01A2EA21A003B7FF8 /* ViewController.m in Sources */,
+				8F29CC901A4174ED00EBD7C3 /* UDPEcho.m in Sources */,
 				8F75336A1A2EE446000A8BB1 /* BLBluetoothOBEXSession.m in Sources */,
 				8F7C32ED1A2EA21A003B7FF8 /* main.m in Sources */,
 				8F7533721A2EE458000A8BB1 /* PhoneCallMonitor.m in Sources */,

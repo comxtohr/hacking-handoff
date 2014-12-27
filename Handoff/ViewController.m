@@ -10,16 +10,22 @@
 #import "PhoneCallMonitor.h"
 #import "VCardParser.h"
 #import <QREncoder/QREncoderOSX.h>
+#import <netdb.h>
+#import "UDPEcho.h"
 
-@interface ViewController ()
+@interface ViewController () <UDPEchoDelegate>
 
 @property (strong, nonatomic) NSString *dialNumber;
 @property (strong, nonatomic) NSArray *contacts;
 @property (assign, nonatomic) PhoneCallMonitor *monitor;
 
+@property (nonatomic, strong, readwrite) UDPEcho *      echo;
+@property (nonatomic, strong, readwrite) NSMutableData *udpData;
 @end
 
 @implementation ViewController
+
+@synthesize echo      = _echo;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,8 +35,9 @@
 
     _monitor = [PhoneCallMonitor sharedMonitor];
     
-    NSString *filePath = @"/Users/Yifei/Downloads/c.vcf";
-    _contacts = [VCardParser parseWithContentOfFile:filePath];
+//    NSString *filePath = @"/Users/Yifei/Downloads/c.vcf";
+//    _contacts = [VCardParser parseWithContentOfFile:filePath];
+    _contacts = @[];
     
     [_numberField setStringValue:_dialNumber];
     _tableView.delegate = self;
@@ -50,6 +57,9 @@
     [_qrImageView setImage:image];
     [_qrImageView setImageScaling:NSScaleToFit];
     [_qrImageView layer].magnificationFilter = kCAFilterNearest;
+    
+    _udpData = [NSMutableData data];
+    [self setupUDPServer];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
@@ -114,5 +124,70 @@
         [_numberField setStringValue:_dialNumber];
     }
 }
+
+- (void)setupUDPServer
+{
+    self.echo = [[UDPEcho alloc] init];
+    self.echo.delegate = self;
+    [self.echo startServerOnPort:9999];
+}
+
+- (void)echo:(UDPEcho *)echo didReceiveData:(NSData *)data fromAddress:(NSData *)addr
+// This UDPEcho delegate method is called after successfully receiving data.
+{
+    assert(echo == self.echo);
+#pragma unused(echo)
+    assert(data != nil);
+    assert(addr != nil);
+    [_udpData appendData:data];
+    if (data.length < 8192) {
+        NSMutableString *   result;
+        NSUInteger          dataLength;
+        NSUInteger          dataIndex;
+        const uint8_t *     dataBytes;
+        
+        dataLength = [_udpData length];
+        dataBytes  = [_udpData bytes];
+        
+        result = [NSMutableString stringWithCapacity:dataLength];
+        assert(result != nil);
+        
+//        [result appendString:@"\""];
+        for (dataIndex = 0; dataIndex < dataLength; dataIndex++) {
+            uint8_t     ch;
+            
+            ch = dataBytes[dataIndex];
+            if (ch == 10) {
+                [result appendString:@"\n"];
+//            } else if (ch == 13) {
+//                [result appendString:@"\r"];
+//            } else if (ch == '"') {
+//                [result appendString:@"\\\""];
+//            } else if (ch == '\\') {
+//                [result appendString:@"\\\\"];
+//            } else if ( (ch >= ' ') && (ch < 127) ) {
+//                [result appendFormat:@"%c", (int) ch];
+//            } else {
+            } else {
+//                [result appendFormat:@"\\x%02x", (unsigned int) ch];
+                [result appendFormat:@"%c", (int) ch];
+            }
+        }
+//        [result appendString:@"\""];
+        _contacts = [VCardParser parseWithData:[result dataUsingEncoding:NSUTF8StringEncoding]];
+        [_tableView reloadData];
+        _udpData = [NSMutableData data];
+    }
+}
+
+- (void)echo:(UDPEcho *)echo didReceiveError:(NSError *)error
+// This UDPEcho delegate method is called after a failure to receive data.
+{
+    assert(echo == self.echo);
+#pragma unused(echo)
+    assert(error != nil);
+    NSLog(@"received error: %@", [error localizedDescription]);
+}
+
 
 @end

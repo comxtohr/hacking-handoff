@@ -102,7 +102,7 @@ NSLog(@"postRegistrationInit");
 }
 -(void)dialNumber:(NSString *)number
 {
-    if (registerDevice) {
+    if (registerDevice && self.phone) {
         [registerDevice dialNumber:number];
     }
 }
